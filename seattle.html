@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		<!-- jQuery library -->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<!-- Input head content beyond this point -->
+		<title>Opporteenity</title>
+		<link type="text/css" rel="stylesheet" href="style.css" media="screen">
+	</head>
+	<script>
+	/*function volunteer1hover (){
+		document.getElementById("please").setAttribute("id", "map");
+		initMap();
+		}
+	function volunteer1dissapear(){
+		document.getElementById("map").setAttribute("id", "please");
+		}*/
+	function initMap() {
+		var mapDiv= document.getElementById("map");
+		var map= new google.maps.Map(mapDiv, {
+			center: {lat:47.663947, lng: -122.331373},
+			zoom:9
+			});
+		<!--volunteer markers-->	
+		<!--marker1-->
+		var marker1= new google.maps.Marker({
+		position:{lat:47.663947, lng: -122.331373},
+		map: map
+		});
+		
+        var infowindow1 = new google.maps.InfoWindow({
+          content: 'Seattle Tilth Garden'
+        });
+
+		marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+		<!--marker2-->		
+		var marker2= new google.maps.Marker({
+		position:{lat:47.569247, lng: -122.363570},
+		map: map
+		});
+
+        var infowindow2 = new google.maps.InfoWindow({
+          content: 'Campfire Seattle'
+        });
+		
+		marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+		<!--marker3-->
+		var marker3= new google.maps.Marker({
+		position:{lat:47.623016, lng: -122.354055},
+		map: map
+		});
+		
+        var infowindow3 = new google.maps.InfoWindow({
+          content: 'The VERA Project'
+        });
+		
+		marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+		<!--marker4-->
+		var marker4= new google.maps.Marker({
+		position:{lat:47.443590, lng: -122.296073},
+		map: map
+		});
+		
+        var infowindow4 = new google.maps.InfoWindow({
+          content: 'Seatac United Chess'
+        });
+		
+		marker4.addListener('click', function() {
+          infowindow4.open(map, marker4);
+        });
+		<!--marker5-->
+		var marker5= new google.maps.Marker({
+		position:{lat:47.719716, lng: -122.298113},
+		map: map
+		});
+		
+        var infowindow5 = new google.maps.InfoWindow({
+          content: 'Seattle Public Library'
+        });
+		
+		marker5.addListener('click', function() {
+          infowindow5.open(map, marker5);
+        });
+		<!--marker6-->
+		var marker6= new google.maps.Marker({
+		position:{lat:47.662638, lng: -122.283265},
+		map: map
+		});
+		
+        var infowindow6 = new google.maps.InfoWindow({
+          content: 'Seattle Childrens Hospital'
+        });
+		
+		marker6.addListener('click', function() {
+          infowindow6.open(map, marker6);
+        });
+		<!--Internships Markers-->
+		<!--marker7-->
+		var marker7= new google.maps.Marker({
+		position:{lat:47.499657, lng: -122.344681},
+		map: map
+		});
+		
+        var infowindow7 = new google.maps.InfoWindow({
+          content: 'Highline Schools Reading Partner Network'
+        });
+		
+		marker7.addListener('click', function() {
+          infowindow7.open(map, marker7);
+        });
+		<!--marker8-->
+		var marker8= new google.maps.Marker({
+		position:{lat:47.433755, lng: -122.272722},
+		map: map
+		});
+		
+        var infowindow8 = new google.maps.InfoWindow({
+          content: 'SeaTac Police Internship'
+        });
+		
+		marker8.addListener('click', function() {
+          infowindow8.open(map, marker8);
+        });
+		<!--marker9-->
+		var marker9= new google.maps.Marker({
+		position:{lat:47.607405, lng:-122.342887},
+		map: map
+		});
+		
+        var infowindow9 = new google.maps.InfoWindow({
+          content: 'Seattle Aquarium Internship'
+        });
+		
+		marker9.addListener('click', function() {
+          infowindow9.open(map, marker9);
+        });
+		<!--marker10-->
+		var marker10= new google.maps.Marker({
+		position:{lat:47.621707, lng:-122.348518},
+		map: map
+		});
+		
+        var infowindow10 = new google.maps.InfoWindow({
+          content: 'EMP Museum Library Internship'
+        });
+		
+		marker10.addListener('click', function() {
+          infowindow10.open(map, marker10);
+        });
+		<!--marker11-->
+		var marker11= new google.maps.Marker({
+		position:{lat:47.608492, lng:-122.336407},
+		map: map
+		});
+		
+        var infowindow11 = new google.maps.InfoWindow({
+          content: 'STEM Paths Innovation Network'
+        });
+		
+		marker11.addListener('click', function() {
+          infowindow11.open(map, marker11);
+        });
+		<!--marker12-->
+		var marker12= new google.maps.Marker({
+		position:{lat:47.605018, lng:-122.329626},
+		map: map
+		});
+		
+        var infowindow12 = new google.maps.InfoWindow({
+          content: 'Seattle City Light'
+        });
+		
+		marker12.addListener('click', function() {
+          infowindow12.open(map, marker12);
+        });
+}
+	
+	
+	</script>
+	<script async defer 
+		src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+	</script>
+	
+	<body>
+		<div id = "banner">
+			<a class = "two" href = "index.html">OPPORTEENITY</a>
+			<br>
+			SEATTLE
+			
+			
+			<!--<form class = "form-inline">-->
+			<!--NAVBAR-->
+			<nav class = "navbar transparent navbar-default navbar-fixed-top">
+				<div class = "container">
+					<div class = "navbar-header">
+						<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+						</button>
+						<a class = "navbar-brand" href = "index.html">OPPORTEENITY</a>
+					</div>
+					<div class = "collapse navbar-collapse" id = "myNavbar">
+						<ul class = "nav navbar-nav navbar-right">
+							<li><a href = "index.html#about">ABOUT</a></li>
+							<li><a href = "index.html#contact">CONTACT US</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+		</div>
+		<!--SECONDARY NAVBAR-->
+		<body>
+<nav class="mynavbar mynavbar-default">
+  <div class="mycontainer-fluid">
+    <!--<div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>-->
+	<!--<div class = "navbar-header">
+	<button type = "button" class = "mynavbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+	</button>
+	</div>-->
+		
+	<div class = "collapse navbar-collapse mynavbar" id = "bs-example-navbar-collapse-1">
+    <ul class="nav mynavbar-nav">
+      <li><a href="#internships">INTERNSHIPS</a></li>
+      <li><a href="#summer programs">SUMMER PROGRAMS</a></li>
+      <li><a href="#tutors">TUTORS</a></li> 
+      <li><a href="#volunteer">VOLUNTEER</a></li>
+	  <li><a href="#comment">PUBLIC POSTS</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</div>
+	<div id = "content">
+		<div id = "internships"><h2>INTERNSHIPS</h2>
+		<div class = "container">
+		<div class="row">
+			<a href="http://highlineschools.org/cms/lib07/WA01919413/Centricity/Domain/1153/Reading%20Partners%20Description%202016.pdf ">
+                <div class="col-sm-3">
+                <div class="panel-heading2">Highline Schools Reading Partner Network</div>
+                <div class="panel-body2">
+                <p>Tutoring with Reading Partners requires no experience and can take as little as 2 hours per week. Volunteers will have an incredible impact on the elementary-age children learning here. 
+				On average, the students double their rate of learning while in this program! Tutors serve at least 2 hours per
+week for 12 weeks. Volunteers must be punctual, reliable, and committed to their shifts, as these kids depend
+on them.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>           
+			<a href="http://www.ci.seatac.wa.us/index.aspx?page=711 ">
+                <div class="col-sm-3">
+                <div class="panel-heading2">King County Sheriff</div>
+                <div class="panel-body2">
+                <p>SeaTac Police Explorers is a group of youth volunteers, ages 14-20, who are interested in the field of Law Enforcement. There is no residency requirement; current members hail from throughout King County. Explorers may aspire to become police officers while others may merely be interested in learning about the profession. Explorers work city events such as the International Festival, 4th of July Carnival, or the SeaTac Christmas Tree Lighting event.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+			<a href="http://www.seattleaquarium.org/creativity ">
+                <div class="col-sm-3">
+                <div class="panel-heading2">Seattle Aquarium Creativity Inspiring Conservation</div>
+                <div class="panel-body2">
+                <p>Seattle Aquarium's Creativity Inspiring Conservation (CIC) program believes that teens have the creativity and passion to inspire change in the way society views conservation and the environment. CIC gives teens the skills to become thoughtful, confident members of the global community: speaking up for what they believe in through art. The teens in CIC are artists, thinkers, scientists and friends.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+         </div>
+		 <div class="row">
+             <a href="http://www.empmuseum.org/about-emp/join-the-team/library-intern/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading2">EMP Library Intern</div>
+                <div class="panel-body2">
+                <p>The EMP Curatorial Department research library provides resources for the museum’s Interpretive services staff that promote lifelong professional development and support scholarship in various aspects of popular culture.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+			<a href="http://www.internships.com/technology/mentor-ta-intern-volunteer ">
+                <div class="col-sm-3">
+                <div class="panel-heading2">STEM Paths Innovation Network</div>
+                <div class="panel-body2">
+                <p>STEM Paths Innovation Network is a non-profit, community-based TechEd startup in Seattle that provides quality enrichment workshops featuring STEAM programming and leadership skills in low income communities serving at-risk and homeless multi-cultural youth. Learn how to teach peers and students as an intern here.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+			<a href="http://www.seattle.gov/light/careers/internships/hsintern.asp">
+                <div class="col-sm-3">
+                <div class="panel-heading2">Seattle City Light</div>
+                <div class="panel-body2">
+                <p>An eight-week paid internship where students have the opportunity to learn professional workplace skills, participate in workshops, talk with executives, gain networking opportunities, and go on outings to City Light locations.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+         </div>
+		 </div>
+		 </div>
+		 </div>
+		
+		<div id = "content">
+		<div id = "summer programs"><h2>SUMMER PROGRAMS</h2>
+		<div class = "container">
+		<div class="row">
+            <a href="http://www.gageacademy.org/tas/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Gage Academy of Art Teen Art Studios</div>
+                <div class="panel-body3">
+                <p>Teen Art Studios (TAS) is a free, year-round, evening drop-in studio art program for young artists ages 13 to 18 that delivers quality art training to teens from all backgrounds, provides exhibition and portfolio building opportunities and encourages positive social engagement. TAS hosts monthly workshops once or twice a week.</p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+			<a href="http://salishseasciences.org/details.html">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Salish Sea Sciences Program</div>
+                <div class="panel-body3">
+                <p>Salish Sea Sciences is an immersive 26 day summer program for up to twenty 14-18 year olds devoted to the marine sciences and maritime ecology in conjunction with scientists and educators from the University of Washington Friday Harbor Laboratories, the SeaDoc Society, the National Parks Service, and Northwest Maritime Center.
+
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+			<a href="http://www.internaldrive.com">
+                <div class="col-sm-3">
+                <div class="panel-heading3">iD Tech Computer Camps</div>
+                <div class="panel-body3">
+                <p>iD Tech is deeply passionate about empowering the next generation of coders, app developers, game designers, engineers, and innovators. Participants will have the opportunity to explore a prestigious college campus, innovative technology and a cutting edge curriculum.
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+         </div>
+		 <div class="row">
+            <a href="http://www.lakeunioncrew.com">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Lake Union Crew - Rowing</div>
+                <div class="panel-body3">
+                <p>For teens looking to spend their summer doing something that is fun, exciting, and challenging, the Lake Union Rowing Crew is the perfect option! Participants gain valuable teamwork skills, build a network of new friends, and collect unforgettable memories.
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+			<a href="https://girlswhocode.com/summer-immersion-programs/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Girls Who Code Summer Immersion Program</div>
+                <div class="panel-body3">
+                <p>Each week of the program covers projects related to computer science, such as art, storytelling, robotics, video games, web sites, and apps. Participants also hear from guest speakers, participate in workshops, connect with female engineers and entrepreneurs, and go on field trips. The program culminates in a final project where students build their own product and share it with their class.
+
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+			<a href="https://www.math.washington.edu/~simuw/thisyear/index.html ">
+                <div class="col-sm-3">
+                <div class="panel-heading3">UW Summer Advanced Math Camp (SIM)</div>
+                <div class="panel-body3">
+                <p>The program includes six intensive two-week courses taught by university professors on topics that change from year to year. Students work on problems in groups or individually, have mathematical discussions with the Teaching Assistant Counselors, and participate in social events, sports, and weekly Saturday outings.
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+         </div>
+		
+		</div>
+		</div>
+		</div>
+		
+		<div id = "content">
+		<div id = "tutors"><h2>TUTORS</h2>
+		<div class = "container">
+		<div class="row">
+            <a href="http://mathnificent.com/tutor/tutors.pdf ">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Seattle Area Math Tutors</div>
+                <div class="panel-body1">
+                <p>Link to a list of Mathematics Tutors in the Seattle Area.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+			<a href="https://www.seattleschools.org/students/academics/arts/northend_summer_music_and_all-city_band/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Northend Summer Music</div>
+                <div class="panel-body1">
+                <p> Summer Music Training. $300 fee for a 3 week traning camp.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+			<a href="http://sandweisstestprep.com/diagnostic-test/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Sandweiss Diagnostic Testing </div>
+                <div class="panel-body1">
+                <p>Diagnostic testing center for standardized tests.  Tutoring is also available.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+         </div>
+		 <div class="row">
+            <a href="http://sandweisstestprep.com/tutoring/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Sandweiss Test Prep</div>
+                <div class="panel-body1">
+                <p>Standardized Testing Prep- including SAT and ACT.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+			<a href="https://www.seattleu.edu/suyi/youth-initiative-in-action/engaging-children-and-youth/summer-learning/">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Seattle U Summer Learning</div>
+                <div class="panel-body1">
+                <p>Summer Learning, catered towards children who wish to come closer to their grade-level standard.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+			<a href="http://fearlessideas.org/programs/after-school-tutoring/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Fearless Ideas</div>
+                <div class="panel-body1">
+                <p>Daily After School Tutoring.  Catered towards homework help.
+                </p>
+                </div>
+				<div class="panel-footer1"></div>
+                </div>
+            </a>
+		</div>
+		</div>
+		</div>
+		 </div>
+ 
+		<div id = "content">
+		<div id = "volunteer"><h2>VOLUNTEER</h2>
+		<div class = "container">
+		<div class="row">
+            <a id="volunteerbox1" onmouseover= "volunteer1hover()" onmouseout= "volunteer1dissapear()" href="http://www.seattletilth.org/get-involved/volunteer/index_html ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Seattle Tilth Garden</div>
+                <div class="panel-body4">
+                <p>There are many ways volunteers can help at Seattle Tilth.  From cooking to farming, teaching to administration, Seattle Tilth can make use of all teens' skills or passions.  It is a great organization for teen volunteers who are interesting in building a sustainable local food system. 
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+			<a href="http://campfireseattle.org/teen-leadership/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Camp Fire Seattle </div>
+                <div class="panel-body4">
+                <p>Camp Fire Central Puget Sound ignites a passion for nature, a commitment to service and a drive to succeed in 5,000 children and teens every year. All of its teen leadership programs work to empower teens to become leaders in their community today while preparing them for wherever their future will take them.
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+			<a href="http://theveraproject.org/getinvolved/ 
+">
+                <div class="col-sm-3">
+                <div class="panel-heading4">The VERA Project</div>
+                <div class="panel-body4">
+                <p>The VERA Project is a center dedicated to creating a music-related safe space for teens to discover their musical passions.  Voluteers at the VERA project can run shows, help in the silkscreen studio or recording studio, curate exhibitions in the gallery; in essence, anything that excites their intersts.
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+         </div>
+		 <div class="row">
+            <a href="https://seatacunited.org/wp-content/uploads/2016/03/Chess-Mentor-JD-1.pdf ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">SeaTac United Chess Mentor</div>
+                <div class="panel-body4">
+                <p>Chess4Life mentors have the opportunity to run one of Chess4Life's chess clubs. Mentors will earn community service hours, gather instructing experience, and build a network of fellow chess enthusiasts!
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+			<a href="http://www.seattlechildrens.org/ways-to-help/volunteer/opportunities/  ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Seattle Children's Hospital</div>
+                <div class="panel-body4">
+                <p>A variety of opportunities are available for teens 16 years and older at Seattle Children’s, including Inventory and Distribution, Clerical and Office Support, Patient and Family Relations, Messengers, and Gift Shop workers. Seattle Children’s is sure to have volunteering positions that spark all teens' interests!
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+			<a href="http://www.spl.org/about-the-library/support-your-library/volunteer-opportunities/service-learning-volunteer-opportunities-for-high-school-students">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Seattle Public Library</div>
+                <div class="panel-body4">
+                <p>The Seattle Public Library offers service learning volunteer opportunities for high school students to develop skills that will help them succeed socially, academically and professionally. Service learning aims to develop teen leaders who can identify and meet community needs. Volunteers learn about real world issues and provide community service in a collaborative environment.
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+         </div>
+		 </div>
+		 </div>
+		 </div>
+		 
+		<p></p>
+		<div id = "content">
+		<div id = "summer programs"><h2>MAP</h2>
+		<div class = "container">
+		<div id="map"></div>
+		<p></p>
+		<h4>Summer Programs and Tutors are not mapped as they are subject to change.</h4>
+		</div>
+		</div>
+		</div>
+		
+		<div id = "content">
+		<div id="comment">
+		<h2>PUBLIC POSTS</h2>
+		<h5>If you know of any other opportunities in this area, please comment details below, including contact information, location, and a short description.</h5>
+		<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_57b232734d413(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_57b232734d413"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_57b232734d413=document.createElement('script');fcs_57b232734d413.type="text/javascript";fcs_57b232734d413.src=ajaxpath_57b232734d413((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=57b232734d413&s=#!57b232734d413");setTimeout("document.getElementById('fcs_div_57b232734d413').appendChild(fcs_57b232734d413)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
+		</div>
+		</div>
+		
+		
+		
+		<footer class = "container-fluid text-center">
+			<a href = "seattle.html" title = "TOP OF PAGE">
+				<span class = "glyphicon glyphicon-chevron-up" style = "color: rgba(0,0,0,0.5);"></span>
+			</a>
+			<p>Created by Victoria Wang, Hailey Dice, and Anjali Agarwal</p>
+		</footer>
+		<div class = "container">
+		</div>
+	</body>
+</html>

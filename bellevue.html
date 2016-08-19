@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		<!-- jQuery library -->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<!-- Input head content beyond this point -->
+		<title>Opporteenity</title>
+		<link type="text/css" rel="stylesheet" href="style.css" media="screen">
+		
+	</head>
+	<script>
+	function initMap() {
+		var mapDiv= document.getElementById("map");
+		var map= new google.maps.Map(mapDiv, {
+			center: {lat:47.615370, lng: -122.201143},
+			zoom:11
+			});
+		<!--volunteer markers-->	
+		<!--marker1-->
+		var marker1= new google.maps.Marker({
+		position:{lat:47.615370, lng: -122.201143},
+		map: map
+		});
+		
+        var infowindow1 = new google.maps.InfoWindow({
+          content: 'Bellevue Arts Museum Internship'
+        });
+
+		marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+		<!--marker2-->		
+		var marker2= new google.maps.Marker({
+		position:{lat:47.618346, lng: -122.200677},
+		map: map
+		});
+
+        var infowindow2 = new google.maps.InfoWindow({
+          content: 'Microsoft High School Internship'
+        });
+		
+		marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+		<!--marker3-->
+		var marker3= new google.maps.Marker({
+		position:{lat:47.601377, lng: -122.124410},
+		map: map
+		});
+		
+        var infowindow3 = new google.maps.InfoWindow({
+          content: 'Bellevue Youth Theater'
+        });
+		
+		marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+		<!--marker4-->
+		var marker4= new google.maps.Marker({
+		position:{lat:47.614625, lng: -122.192325},
+		map: map
+		});
+		
+        var infowindow4 = new google.maps.InfoWindow({
+          content: 'Bellevue City Hall- Conflict Mediator'
+        });
+		
+		marker4.addListener('click', function() {
+          infowindow4.open(map, marker4);
+        });
+		<!--marker5-->
+		var marker5= new google.maps.Marker({
+		position:{lat:47.625553, lng: -122.150702},
+		map: map
+		});
+		
+        var infowindow5 = new google.maps.InfoWindow({
+          content: 'Bellevue Highlands Center'
+        });
+		
+		marker5.addListener('click', function() {
+          infowindow5.open(map, marker5);
+        });
+		<!--marker6-->
+		var marker6= new google.maps.Marker({
+		position:{lat:47.605131, lng: -122.165530},
+		map: map
+		});
+		
+        var infowindow6 = new google.maps.InfoWindow({
+          content: 'Kelsey Creek Farm'
+        });
+		
+		marker6.addListener('click', function() {
+          infowindow6.open(map, marker6);
+        });
+		<!--Internships Markers-->
+		<!--marker7-->
+		var marker7= new google.maps.Marker({
+		position:{lat:47.625553, lng: -122.150702},
+		map: map
+		});
+		
+        var infowindow7 = new google.maps.InfoWindow({
+          content: 'Bellevue Skate Park and Highlands Center'
+        });
+		
+		marker7.addListener('click', function() {
+          infowindow7.open(map, marker7);
+        });
+}
+	</script>
+	<script async defer 
+		src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+	</script>
+	<body>
+		<div id = "banner2">
+			<a class = "two" href = "index.html">OPPORTEENITY</a>
+			<br>
+			BELLEVUE
+			
+			
+			<!--<form class = "form-inline">-->
+			<!--NAVBAR-->
+			<nav class = "navbar transparent navbar-default navbar-fixed-top">
+				<div class = "container">
+					<div class = "navbar-header">
+						<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+						</button>
+						<a class = "navbar-brand" href = "index.html">OPPORTEENITY</a>
+					</div>
+					<div class = "collapse navbar-collapse" id = "myNavbar">
+						<ul class = "nav navbar-nav navbar-right">
+							<li><a href = "index.html#about">ABOUT</a></li>
+							<li><a href = "index.html#contact">CONTACT US</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+		</div>
+		<!--SECONDARY NAVBAR-->
+		<body>
+<nav class="mynavbar mynavbar-default">
+  <div class="mycontainer-fluid">
+    <!--<div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>-->
+	<!--<div class = "navbar-header">
+	<button type = "button" class = "mynavbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+	</button>
+	</div>-->
+		
+	<div class = "collapse navbar-collapse mynavbar" id = "bs-example-navbar-collapse-1">
+    <ul class="nav mynavbar-nav">
+      <li><a href="#internships">INTERNSHIPS</a></li>
+      <li><a href="#summer programs">SUMMER PROGRAMS</a></li>
+      <li><a href="#tutors">TUTORS</a></li> 
+      <li><a href="#volunteer">VOLUNTEER</a></li>
+	  <li><a href="#comment">PUBLIC POSTS</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+	<div id = "content">
+		<div id = "internships"><h2>INTERNSHIPS</h2>
+		<div class = "container">
+		<div class="row">
+            <a href="http://www.bellevuearts.org/resources/job_descriptions/Intern-Marketing_2015.pdf ">
+                <div class="col-sm-3">
+                <div class="panel-heading2">Bellevue Art Museum Marketing Intern</div>
+                <div class="panel-body2">
+                <p>Bellevue Arts Museum is seeking Marketing & PR Teenage Interns to help strengthen the museum's visibility and brand. The successful candidates will develop professional writing samples, social media management experience, and other valuable skills to jumpstart their careers. 
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+			<a href="https://careers.microsoft.com/students/highschool">
+                <div class="col-sm-3">
+                <div class="panel-heading2">Microsoft High School Program</div>
+                <div class="panel-body2">
+                <p>
+				The Microsoft High School internship program is one of the most rewarding programs for high schoolers available.  They have the opportunity to develop cutting-edge technology, work with high-tech professionals, and get paid for their work.  It is the perfect program for teens dedicated to the STEM field and ready for an intense comittment.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+			<a href="http://www.ci.bellevue.wa.us/volunteer-teens-environmental-stewardship.htm ">
+                <div class="col-sm-3">
+                <div class="panel-heading2">Environmental Stewardship</div>
+                <div class="panel-body2">
+                <p>Local high schools have the opportunity to perform various tasks/projects to support Bellevue’s efforts to reduce community energy consumption and compete for the $5 million Georgetown University Energy Prize.  A strong interest in environmental sustainability, clean energy, public engagement, outreach and communications is desired.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+         </div>
+		 <div class="row">
+            <a href="http://www.internships.com/sports/sportalk-high-school-ambassador-interlake-senior-high-school">
+                <div class="col-sm-3">
+                <div class="panel-heading2">SPORTalk High School Sports Ambassador</div>
+                <div class="panel-body2">
+                <p>SPORTalk is currently seeking 2 High School Ambassadors from each school in the Seattle area to join a team of Ambassadors throughout the country. SPORTalk High School Ambassadors help spread the word about SPORTalk at their schools by showing the app/site to their friends, and helping them sign up and join the Talk.
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+         </div>
+		 </div>
+		 </div>
+		 </div>
+		
+		<div id = "content">
+		<div id = "summer programs"><h2>SUMMER PROGRAMS</h2>
+		<div class = "container">
+		<div class="row">
+            <a href="http://tsacamparnold.org/summer/#tahoma ">
+                <div class="col-sm-3">
+                <div class="panel-heading3">The Salvation Army Camp Tahoma</div>
+                <div class="panel-body3">
+                <p>The Salvation Army Camp partners with Camp Arnold to provide opportunities for youth in the summer on the Eastside. Their summer camps provide opportunities for growth spiritually, emotionally, and physically. It allows children to experience new activities, be in a positive and nurturing environment and experience the great outdoors.
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+			<a href="www.adventuretreks.com ">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Adventure Trek</div>
+                <div class="panel-body3">
+                <p>Adventure Trek's Adventure Programs are offered during the summer, while their School Programs are offered in the fall. In addition to an immeasurable amount of fun, these programs are designed to teach leadership, teamwork, creative problem solving, self-responsibility, community living, and outdoor skills while building self-confidence. 
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+			<a href="http://www.bellevuecollege.edu/ce/summer-teen-program/">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Bellevue College Summer Teen Program</div>
+                <div class="panel-body3">
+                <p>Participants may choose from a variety of different types of courses, taught in varying lengths from one week to three. The goal of the Summer Teen program is to further education and promote lifelong learning for kids ages 12-17.
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+         </div>
+		 <div class="row">
+            <a href="http://www.ci.bellevue.wa.us/well-kept.htm">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Well KEPT</div>
+                <div class="panel-body3">
+                <p>Well-KEPT (Kids Environmental Project Training) is a summer youth employment program offered through the Natural Resource Division of the Parks & Community Services Department. The program is designed to provide Bellevue youth with education, job skills, and career development training in the field of park resource management. Work focuses on parkland renovation and maintenance; projects may include forest enhancement, wetland restoration, and trail construction. 
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+			<a href="https://girlswhocode.com/summer-immersion-programs/">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Girls Who Code Summer Immersion Program</div>
+                <div class="panel-body3">
+                <p>Girls Who Code's Summer Immersion Program's free, 7-week summer program for 10-11th grade girls who wish to learn coding and gain exposure to technology-based careers.  Curriculum includes instruction on Python, Robotics, HTML, and more.  Acceptance is limited and determined by application.
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+			<a href="https://www.bellevuecollege.edu/summerenrichment/ ">
+                <div class="col-sm-3">
+                <div class="panel-heading3">Bellevue College Summer Enrichment Program</div>
+                <div class="panel-body3">
+                <p>The Summer Enrichment Program allows students who are 16 and 17 years old and who meet the admissions criteria to enrich their high school education by taking more challenging college level classes.  These students take summer quarter classes alongside college students. They have the opportunity to earn college credit, and gain insight to the college experience.
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+         </div>
+		
+		</div>
+		</div>
+		</div>
+		
+		<div id = "content">
+		<div id = "tutors"><h2>TUTORS</h2>
+		<div class = "container">
+		 <div class="row">
+            <a href="http://locations.sylvanlearning.com/us/bellevue-wa ">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Sylvan Learning-Tutoring in Bellevue</div>
+                <div class="panel-body1">
+                <p>Syvan's tutors in Bellevue, WA use a personal approach and interactive technology to help students learn math, reading, writing and more—turning B's into A's and frustration into confidence!
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+			<a href="https://www.teenlife.com/business/brightmont-academy-tutoring-and-test-preparation/">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Brightmont Academy- Tutoring and Test Prep</div>
+                <div class="panel-body1">
+                <p>Tutoring at Brightmont Academy for students in 3rd- to 12th-grade provides one-on-one instruction with an experienced teacher.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+				<a href="http://www.blc.info/summerprogram.html ">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Bellevue Learning Center</div>
+                <div class="panel-body1">
+                <p>Since 1996, BLC has provided a summer intensive program to enrich students' reading, writing, and math skills.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+		</div>
+		<div class="row">
+				<a href="http://bellevue.universitytutor.com/bellevue_tutoring">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Bellevue Tutoring</div>
+                <div class="panel-body1">
+                <p>List of qualified tutors in Bellevue.  Cover a wide range of subjects, from economics to Korean, from physics to French!
+                </p>
+                </div>
+				<div class="panel-footer1"></div>
+                </div>
+            </a>
+				<a href="http://bellevue.huntingtonhelps.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Huntington Learning Center</div>
+                <div class="panel-body1">
+                <p>Huntigtin offers tutoring and test prep, including SAT and ACT prep.  Average 200 point SAT increase.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+			<a href="https://eastsidetutors.com/tutors">
+                <div class="col-sm-3">
+                <div class="panel-heading1">Eastside Tutors</div>
+                <div class="panel-body1">
+                <p>A list of qualified tutors on the Eastside.
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+         </div>
+		</div>
+		</div>
+		 </div>
+ 
+		<div id = "content">
+		<div id = "volunteer"><h2>VOLUNTEER</h2>
+		<div class = "container">
+		<div class="row">
+            <a href="http://bellevuewa.gov/byt-volunteering.htm">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Bellevue Youth Theater</div>
+                <div class="panel-body4">
+                <p>Anyone 13 years of age and older can volunteer at the Bellevue Youth Theater as an usher, prop master, light operator, or sound operator! This theater thrives on volunteers, and operates with the desire to provide theater arts opportunities for all young people. BYT volunteers acquire theater experience and build a strong network of supporters, while having a blast!
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+			<a href="http://www.ci.bellevue.wa.us/conciliator.htm ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Parent-Teen Conflict Mediator</div>
+                <div class="panel-body4">
+                <p>All teenagers have the opportunity to volunteer as conflict mediators for parents and their teenage children.  The volunteers, being teenagers, tend to possess the required disposition to help teenagers settle their arguments.  Volunteers must demonstrate a high level of maturity and be willing to commit a great deal of time to acquire this position, but will surely reap rewards in learning and character development by doing so.
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+			<a href="http://www.ci.bellevue.wa.us/11619.htm ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Eastside Energy Corps</div>
+                <div class="panel-body4">
+                <p>Volunteers at the Eastside Energy Corps become a part of an organization centered around helping Bellevue become more energy-efficient and green.  They give informational speeches, become a part of campaigns that aim to educate the citizens of Bellevue on environmental issues facing society, and plan events that facilitate the energy conservation conversation.
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+         </div>
+		 <div class="row">
+            <a href="http://www.ci.bellevue.wa.us/volunteer_highland_reception.htm ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Highland Center Reception Assistant</div>
+                <div class="panel-body4">
+                <p>Volunteers will assist with basic reception duties including answering multi-line telephones, providing information and referrals both via telephone and in-person contact; directing participants to various classrooms; light typing, filing and making visitors feel welcome.  Minimum age to participate is 16.
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+			<a href="http://www.bellevuewa.gov/kelsey-creek-volunteering.htm ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Kelsey Creek Farm</div>
+                <div class="panel-body4">
+                <p>Teen volunteers at Kelsey Creek Farm are involved in the care and management of farm animals and ponies.  Volunteers help the farm staff with daily operations, manage animal chore routines, and learn responsible equine and farm animal care.  They enjoy vigorous exercise and fresh air while working outside on the farm with a variety of animals.
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+			<a href="http://www.ci.bellevue.wa.us/skate-park-asssistant.htm ">
+                <div class="col-sm-3">
+                <div class="panel-heading4">Bellevue Skate Park Assistant</div>
+                <div class="panel-body4">
+                <p>Assistants at Bellevue Skate Park have the opportunity to help maintain the park, administer activities, and keep it running smoothly!
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+         </div>
+		 </div>
+		 </div>
+		 </div>
+	
+		<p></p>
+		<div id = "content">
+		<div id = "summer programs"><h2>MAP</h2>
+		<div class = "container">
+		<div id="map"></div>
+		<p></p>
+		<h4>Summer Programs and Tutors are not mapped as they are subject to change.</h4>
+		</div>
+		</div>
+		</div>
+		
+		<div id = "content">
+		<div id= "comment">
+		<h2>PUBLIC POSTS</h2>
+		<h5>If you know of any other opportunities in this area, please comment details below, including contact information, location, and a short description.</h5>
+		
+		<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_57b2349c6391c(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_57b2349c6391c"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_57b2349c6391c=document.createElement('script');fcs_57b2349c6391c.type="text/javascript";fcs_57b2349c6391c.src=ajaxpath_57b2349c6391c((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=57b2349c6391c&s=#!57b2349c6391c");setTimeout("document.getElementById('fcs_div_57b2349c6391c').appendChild(fcs_57b2349c6391c)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
+		</div>
+		</div>
+		
+		<footer class = "container-fluid text-center">
+			<a href = "bellevue.html" title = "TOP OF PAGE">
+				<span class = "glyphicon glyphicon-chevron-up" style = "color: rgba(0,0,0,0.5);"></span>
+			</a>
+			<p>Created by Victoria Wang, Hailey Dice, and Anjali Agarwal</p>
+		</footer>
+		
+		
+		<div class = "container">
+		</div>
+	</body>
+</html>

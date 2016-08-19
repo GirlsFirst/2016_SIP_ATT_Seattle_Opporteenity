@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <style>
+    :root{
+        --main-bg-color: lightpink;
+        }
+    :root{
+        --main-ag-color: lightblue;
+        }
+    :root{
+        --main-cg-color: lightgreen;
+        }
+    :root{
+        --main-dg-color: #ffcc66;
+        }
+    .row{
+        padding-bottom: 7px;
+        padding-right: 7px;
+    }
+    .col-sm-3{
+        outline-offset: 80px;
+    }
+    .container{
+        padding-top: 400px;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+    }
+    p{
+        text-decoration: none;
+    }
+
+
+
+    .panel-heading2{
+	background-color: var(--main-ag-color);
+	font-size: 30px;
+	font-family: calibri;
+	color: white;
+    }
+    .panel-footer2{
+        background-color: var(--main-ag-color);
+        border-color: var(--main-ag-color);
+    }
+    .panel-body2{
+        background-color: var(--main-ag-color);
+        font-size: 14px;
+        font-family: calibri;
+    }
+
+
+    .panel-heading3{
+	background-color: var(--main-cg-color);
+	font-size: 30px;
+	font-family: calibri;
+	color: white;
+    }
+    .panel-footer3{
+        background-color: var(--main-cg-color);
+        border-color: var(--main-cg-color);
+    }
+    .panel-body3{
+        background-color: var(--main-cg-color);
+        font-size: 14px;
+        font-family: calibri;
+    }
+
+
+
+    
+        
+    .panel-heading1{
+	background-color: var(--main-bg-color);
+	font-size: 30px;
+	font-family: calibri;
+	color: white;
+    }
+    .panel-footer1{
+        background-color: var(--main-bg-color);
+        border-color: var(--main-bg-color);
+    }
+    .panel-body1{
+        background-color: var(--main-bg-color);
+        font-size: 14px;
+        font-family: calibri;
+    }
+
+
+
+    .panel-heading4{
+	background-color: var(--main-dg-color);
+	font-size: 30px;
+	font-family: calibri;
+	color: white;
+    }
+    .panel-footer4{
+        background-color: var(--main-dg-color);
+        border-color: var(--main-dg-color);
+    }
+    .panel-body4{
+        background-color: var(--main-dg-color);
+        font-size: 14px;
+        font-family: calibri;
+    }    
+    </style>
+    
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- Input head content beyond this point -->
+        <title>You got this</title>
+    
+    </head>
+    <body>
+        <div class="row">
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading2">ACTIVITY</div>
+                <div class="panel-body2">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading3">ACTIVITY</div>
+                <div class="panel-body3">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading1">ACTIVITY</div>
+                <div class="panel-body1">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading4">ACTIVITY</div>
+                <div class="panel-body4">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading3">ACTIVITY</div>
+                <div class="panel-body3">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading1">ACTIVITY</div>
+                <div class="panel-body1">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading4">ACTIVITY</div>
+                <div class="panel-body4">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading2">ACTIVITY</div>
+                <div class="panel-body2">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="row">
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading1">ACTIVITY</div>
+                <div class="panel-body1">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading4">ACTIVITY</div>
+                <div class="panel-body4">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading2">ACTIVITY</div>
+                <div class="panel-body2">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading3">ACTIVITY</div>
+                <div class="panel-body3">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+        </div>        
+
+        <div class="row">
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading4">ACTIVITY</div>
+                <div class="panel-body4">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer4"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading2">ACTIVITY</div>
+                <div class="panel-body2">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer2"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading3">ACTIVITY</div>
+                <div class="panel-body3">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer3"></div>
+                </div>
+            </a>
+            <a href="https://www.google.com/">
+                <div class="col-sm-3">
+                <div class="panel-heading1">ACTIVITY</div>
+                <div class="panel-body1">
+                <p>Here's a description of the activity:
+                <br>this is a description</br>
+                <p>here's some more information information information information</p>
+                </p>
+                </div>
+                <div class="panel-footer1"></div>
+                </div>
+            </a>
+        </div>        
+
+    </body>
+</html>

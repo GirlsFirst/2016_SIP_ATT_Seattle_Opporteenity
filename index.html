@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		<!-- jQuery library -->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<!--Import Font Awesome-->
+		<link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
+		
+		<!-- Input head content beyond this point -->
+		<title>Opporteenity</title>
+		<link type="text/css" rel="stylesheet" href="style.css" media="screen">
+		
+	</head>
+	<script>
+	function STime(){
+		document.getElementById("go_button").setAttribute("href", "seattle.html");
+		var vicky= document.getElementById("happy");
+		vicky.innerHTML="Seattle";
+		}
+	function BTime(){
+		document.getElementById("go_button").setAttribute("href", "bellevue.html");
+		var vicky2= document.getElementById("happy");
+		vicky2.innerHTML="Bellevue";
+		}
+	function RTime(){
+		document.getElementById("go_button").setAttribute("href", "redmond.html");
+		var vicky3= document.getElementById("happy");
+		vicky3.innerHTML="Redmond";
+		}
+	function ITime(){
+		document.getElementById("go_button").setAttribute("href", "misc.html");
+		var vicky4= document.getElementById("happy");
+		vicky4.innerHTML="Public Posts";
+		}
+	
+	
+	<!--SMOOTH SCROLLING-->
+	$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+	
+	
+	
+	
+	</script>
+	<body>
+		
+		<div class="jumbotron">
+			<a class = "two" href = "index.html"><h1>OPPOR<carrot style = "color:#fff;text-shadow: -2px -2px 0 #ff4dd2, 2px -2px 0 #ff4dd2, -2px 2px 0 #ff4dd2, 2px 2px 0 #ff4dd2;">TEEN</carrot>ITY</h1></a> <!--#b30086-->
+			<p>for the Greater Seattle Area</p> 
+			<!--<form class = "form-inline">-->
+			<!--NAVBAR-->
+			<nav class = "navbar transparent navbar-default navbar-fixed-top">
+				<div class = "container">
+					<div class = "navbar-header">
+						<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#myNavbar">
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+						</button>
+						<a class = "navbar-brand" href = "index.html">OPPORTEENITY</a>
+					</div>
+					<div class = "collapse navbar-collapse" id = "myNavbar">
+						<ul class = "nav navbar-nav navbar-right">
+							<!--<li><a href = "#map">MAP</a></li>-->
+							<li><a href = "#about">ABOUT</a></li>
+							<li><a href = "#contact">CONTACT US</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!--DROPDOWN-->
+			  <div class = "btn-group">
+				<button id= "pain_in_the" style = "width: 200px; height:33px; text-align: left;" type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+					<div id="happy">Enter City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "caret"></span></div>
+				</button>
+				<ul id="list_of_cities" class = "dropdown-menu" style = "width: 200px;">
+					<li><a onclick= "STime()" href="#">Seattle</a></li>
+					<li><a onclick= "BTime()" href="#">Bellevue</a></li>
+					<li><a onclick= "RTime()" href="#">Redmond</a></li>
+					<!--<li><a onclick= "ITime()" href="#">Public Posts</a></li>-->
+				</ul>
+			  </div>
+				<!--<input type = "city" class = "form-control" size = "50" placeholder = "Enter City">-->
+				<a id="go_button"><button type = "button" class = "btn btn-danger" style = "background-color: #E9347F;">GO</button></a>
+			
+			<footer class = "container-fluid text-center">
+			<a href = "#about" title = "ABOUT">
+			<br><br><br><br><br><br><br><br>
+				<span class = "glyphicon glyphicon-chevron-down" style = "color: #fff;"></span>
+			</a>
+			</footer>
+		</div>
+		<!--MAP SECTION-->
+		<!--<div id = "map">
+		<div id = "content">
+		
+		
+		
+		</div>
+		</div>->
+		<!--ABOUT SECTION-->
+		<div id = "about">
+		<div class = "container-fluid">
+			<div class = "row">
+			<!--<div class = "col-sm-8">-->
+			<h2>ABOUT</h2><br><br>
+			<h5><strong>MISSION</strong><br><br>
+			Many teens in the greater Seattle area, at some point in their high school careers, develop a need for volunteer, internship or school aid opportunities. More often than not, teens are lost when it comes to where to find such opportunities, because 86% of volunteer opportunities in America are geared towards adults.  Teens end up contacting dozens of non-profit organizations, only to find that none of them accept minors as volunteers. This issue becomes a higher priority when it is noted that most high schools require teens to complete volunteer hours, and many colleges and universities require some form of them for acceptance and placement.
+
+<br><br>We must not forget to highlight the importance of such opportunities to students’ personal development; there is a reason schools value them so highly.  After volunteering, students often prioritize giving back to the community for the rest of their lives. Meanwhile, internships offer job and educational experience. Summer programs help students stay on top of their education during summer months and further progress their education as they study new skills. The same can be said for tutoring.  Thus, the fact that there is not a database of opportunities for teens is a dire problem. That is where Opporteenity comes in.
+
+<br><br>Opporteenity offers teens a location-based search of volunteer, internship, tutoring, and summer programs opportunities, guaranteed to be accessible to them. Teens no longer need to face the frustration of wanting to better themselves but not knowing how, as Opporteenity is there to connect them to their communities.  Thus far, we have focused on connecting teens to opportunities in the greater Seattle area, but continue to expand with goals of leaving our positive impact on a larger audience.
+
+			</h5>
+			
+		</div>
+		<!--<div class = ".col-xs-6 .col-sm-3">
+			<span class = "glyphicon glyphicon-education" style = "font-size: 250px;">
+		</div>-->
+		</div>
+	</div>
+		<div class = "container-fluid bg-grey">
+			<h5><strong>CREATORS</strong><br><br>
+			This site was developed and created by Victoria Wang, Hailey Dice, Anjali Agarwal as a final project of the 2016 Girls Who Code Summer Immersion Program at AT&T in Redmond, WA.
+			</h5>
+			
+		</div>
+		<!--CONTACT US SECTION-->
+		<script type="text/javascript">
+			function ClearAll(){
+				var clear_a=document.getElementById("name");
+				var clear_b=document.getElementById("email");
+				var clear_c=document.getElementById("comments");
+				if (clear_a.value=="")
+				{
+				alert ("Please complete the form.")
+				}
+				else if (clear_b.value=="")
+				{
+				alert ("Please complete the form.")
+				}
+				else if (clear_c.value=="")
+				{
+				alert ("Please complete the form.")
+				}
+				else{
+					clear_a.value="";
+					clear_b.value="";
+					clear_c.value="";
+					alert ("Thank you for your input!");
+				}
+				}
+		</script>
+		<div id = "contact">
+		<div class = "container-fluid">
+			<h2 class ="text-center"> CONTACT US</h2>
+			<div class = "row">
+				<div class = "col-sm-5">
+					<p>Contact the creators of this website.</p>
+					<p><span class = "glyphicon glyphicon-map-marker"></span> Washington, USA</p>
+					<!--<p><span class = "glyphicon glyphicon-phone"></span> +1(206)291-2927</p>-->
+					<p><span class = "glyphicon glyphicon-envelope"></span> opporteenitygwc@gmail.com</p>
+				</div>
+				<div class = "col-sm-7">
+					<div class = "row">
+						<div class = "col-sm-6 form-group">
+						
+							<input class = "form-control" id = "name" name = "name" placeholder = "Name" type = "text" value=>
+						</div>
+							<div class = "col-sm-6 form-group">
+								<input class = "form-control" id = "email" name = "email" placeholder = "Email" type = "email" value=>
+							</div>
+					</div>
+						<textarea class = "form-control" id = "comments" name = "comments" placeholder = "Comment" rows = "5" value=></textarea><br>
+						<div class = "row">
+							<div class = "col-sm-12 form-group">
+								<button class = "btn btn-default pull-right" onclick="ClearAll()" type = "submit">Send</button>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		
+		<!--FOOTER-->
+		<footer class = "container-fluid text-center">
+			<a href = "index.html" title = "TOP OF PAGE">
+				<span class = "glyphicon glyphicon-chevron-up" style = "color: rgba(0,0,0,0.5);"></span>
+			</a>
+			<p>Created by Victoria Wang, Hailey Dice, and Anjali Agarwal</p>
+			<br>
+			<a class="btn btn-social-icon btn-instagram" href = "https://instagram.com/victorai" style = "color: #8e8e8e; font-size: 25px;">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</footer>
+		<div class = "container">
+		</div>
+	</body>
+</html>
